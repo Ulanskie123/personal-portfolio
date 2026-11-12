@@ -16,8 +16,7 @@
 - JavaScript
 
 ## Live Website
-
-https://personal-portfolio-xxxx.vercel.app
+https://personal-portfolio-eight-beige-79.vercel.app/
 
 ## Author
 Raymundo Rain Justin
