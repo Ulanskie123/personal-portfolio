@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raymundo Portfolio</title>
+  <meta name="description" content="Personal portfolio of Raymundo Rain Justin – BSIT student and aspiring web developer.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo">Ulan</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section id="home" class="hero">
+    
+    <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+      <filter id="liquidFx" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="140" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </svg>
+    <div class="liquid" id="liquid" aria-hidden="true">
+      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    </div>
+    <div class="hero-text">
+      <p class="hello">Hi, I'm</p>
+      <h1>Raymundo Rain Justin</h1>
+      <p class="tagline">Building clean, working websites.</p>
+      <p class="intro">I'm a 4th year Bachelor of Science in Information Technology student at La Consolacion University Philippines. I enjoy building simple, useful web projects and learning something new with every one.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="avatar" aria-hidden="false">
+      <span>RJ</span>
+      <!-- Your photo: img/profile.jpg -->
+      <img src="img/profile.jpg" alt="Portrait of Raymundo Rain Justin" onerror="this.remove()">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About me</h2>
+    <div class="two-col">
+      <p>Hi! I'm Raymundo Rain Justin, but My friends prefers to call me Ulan. I'm a 4th year Information Technology student at La Consolacion University Philippines. My interest in technology started with curiosity about how websites are made, and it grew into a love for turning ideas into something people can actually use. I learn best by building, so I keep creating small projects to practice HTML, CSS, JavaScript and Python. After graduating, I want to work as a web developer and keep improving my skills on real projects.</p>
+      <div>
+        <h3>Education</h3>
+        <ul class="timeline">
+          <li><strong>Bachelor of Science in Information Technology</strong><span>La Consolacion University Philippines · 2023 – Present</span></li>
+          <li><strong>Senior High School – [GAS]</strong><span>[CMIS] · [2021] – [2023]</span></li>
+          <li><strong>Junior High School</strong><span>[CMIS] · [2017] – [2021]</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div>
+        <h3>Programming</h3>
+        <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java</li></ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul class="chips"><li>Git GitHub</li><li>VS Code</li><li>Vercel</li></ul>
+      </div>
+      <div>
+        <h3>Soft skills</h3>
+        <ul class="chips"><li>Teamwork</li><li>Problem solving</li><li>Time management</li><li>Communication</li></ul>
+      </div>
+    </div>
+   
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="project">
+        <img class="thumb" src="img/Ulancoffe.png" alt="Screenshot of the coffee shop website">
+        <h3>Coffee Shop Website</h3>
+        <p>A website for a coffee shop that presents its menu, story and contact details. I designed a clean layout that works on both desktop and mobile, so customers can easily browse on any device.</p>
+        <p class="stack">HTML · CSS · PHP ·  JavaScript</p>
+        <a href="https://github.com/Ulanskie123" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+
+      <article class="project">
+        <img class="thumb" src="img/Recharge.png" alt="Screenshot of the game top-up website">
+        <h3>Game Top-Up Website</h3>
+        <p>A website where players can buy game credits in minutes. Users choose their game, select an account and an amount, then pay and play. I focused on a dark, game-style design and a simple three-step flow.</p>
+        <p class="stack">HTML · CSS · PHP · JavaScript</p>
+        <a href="https://github.com/Ulanskie123" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul class="timeline wide">
+      <li><strong>Built and deployed my first personal portfolio</strong><span>Published on GitHub and Vercel · 2026</span></li>
+      <li><strong>Completed a website Coffee Shop</strong><span>Designed and developed a responsive coffee shop website · 2026</span></li>
+      <li><strong>Capstone project in progress</strong><span>BSIT 4th Year · 2026</span></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact me</h2>
+    <div class="two-col">
+      <ul class="contact-list">
+        <li>Email: <a href="mail:raymundorainjustin71@gmail.com">raymundorainjustin71@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/Ulanskie123" target="_blank" rel="noopener">github.com/Ulanskie123</a></li>
+        <li>Location: Philippines</li>
+      </ul>
+      <form id="contactForm">
+        <label>Name <input name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Raymundo Rain Justin. Built with HTML, CSS and JavaScript.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
